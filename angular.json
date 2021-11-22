@@ -1,9 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "293c76bb-f3e1-4e8e-9c49-edef8b10c444"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "my-new-angular-app": {
+    "Phase4QuizApp": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/my-new-angular-app",
+            "outputPath": "dist/Phase4QuizApp",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -68,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "my-new-angular-app:build:production"
+              "browserTarget": "Phase4QuizApp:build:production"
             },
             "development": {
-              "browserTarget": "my-new-angular-app:build:development"
+              "browserTarget": "Phase4QuizApp:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -79,7 +82,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "my-new-angular-app:build"
+            "browserTarget": "Phase4QuizApp:build"
           }
         },
         "test": {
@@ -102,5 +105,5 @@
       }
     }
   },
-  "defaultProject": "my-new-angular-app"
+  "defaultProject": "Phase4QuizApp"
 }

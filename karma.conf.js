@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/my-new-angular-app'),
+      dir: require('path').join(__dirname, './coverage/Phase4QuizApp'),
       subdir: '.',
       reporters: [
         { type: 'html' },
